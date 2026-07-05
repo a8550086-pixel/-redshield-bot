@@ -1,0 +1,18 @@
+{
+  "name": "redshield-monitor",
+  "version": "1.0.0",
+  "description": "Playwright bot that logs into app.getredshield.com, watches for new events, and forwards them to an n8n webhook.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "postinstall": "node scripts/install-browsers.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "playwright": "^1.47.2"
+  }
+}
